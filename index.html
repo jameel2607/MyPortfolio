@@ -6,6 +6,7 @@
     <title>Abdul Jameel A M | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -41,7 +42,7 @@
         </div>
     </section>
 
-        <!-- ABOUT -->
+    <!-- ABOUT -->
     <section id="about" class="about">
         <div class="about-content">
             <h2>About Me</h2>
@@ -71,7 +72,7 @@
         </div>
     </section>
 
-        <!-- SKILLS -->
+    <!-- SKILLS -->
     <section id="skills" class="skills">
         <h2>Skills</h2>
 
@@ -79,7 +80,7 @@
 
             <div class="skill-card">
                 <h3>Programming & Data</h3>
-                <p>Python, SQL, Data Analysis, Data Visualization</p>
+                <p>HTML, CSS, Python, SQL, Data Analysis, Data Visualization</p>
             </div>
 
             <div class="skill-card">
@@ -105,7 +106,7 @@
         </div>
     </section>
 
-        <!-- EXPERIENCE -->
+    <!-- EXPERIENCE -->
     <section id="experience" class="experience">
         <h2>Experience</h2>
 
@@ -170,7 +171,7 @@
         </div>
     </section>
 
-        <!--  PROJECTS  -->
+    <!--  PROJECTS  -->
     <section id="projects" class="projects">
         <h2>Projects</h2>
 
@@ -178,6 +179,11 @@
 
             <div class="project-card">
                 <h3>AI-Powered Physiotherapy Clinical Decision Support System</h3>
+                <div class="project-tags">
+                    <span class="tag">RAG</span>
+                    <span class="tag">NLP</span>
+                    <span class="tag">Healthcare</span>
+                </div>
                 <p>
                     Designed and developed an AI-driven decision support system to
                     assist physiotherapists in treatment planning using Retrieval-
@@ -187,6 +193,11 @@
 
             <div class="project-card">
                 <h3>SMAART Healthcare – Hospital Management System</h3>
+                <div class="project-tags">
+                    <span class="tag">Full-stack</span>
+                    <span class="tag">EHR</span>
+                    <span class="tag">Auth</span>
+                </div>
                 <p>
                     Built a full-stack healthcare platform for appointment booking
                     and EHR management with secure authentication, role-based access
@@ -196,6 +207,11 @@
 
             <div class="project-card">
                 <h3>91CrPC Analyzer – Intelligent Law Enforcement Assistant</h3>
+                <div class="project-tags">
+                    <span class="tag">NLP</span>
+                    <span class="tag">LegalTech</span>
+                    <span class="tag">Automation</span>
+                </div>
                 <p>
                     Developed an AI-assisted system to support law enforcement
                     investigations by identifying scam patterns, generating legal
@@ -206,7 +222,7 @@
         </div>
     </section>
 
-        <!-- ACHIEVEMENTS -->
+    <!-- ACHIEVEMENTS -->
     <section id="achievements" class="achievements">
             <h2>Achievements & Hackathons</h2>
 
@@ -253,7 +269,7 @@
             </div>
     </section>
 
-        <!-- CERTIFICATIONS -->
+    <!-- CERTIFICATIONS -->
     <section id="certifications" class="certifications">
         <h2>Certifications</h2>
 
@@ -285,7 +301,7 @@
         </div>
     </section>
 
-        <!-- CONTACT -->
+    <!-- CONTACT -->
     <section id="contact" class="contact">
         <h2>Contact</h2>
 
@@ -294,46 +310,69 @@
             and meaningful technical discussions. Feel free to reach out.
         </p>
 
-        <div class="contact-info">
-            <p><strong>Email:</strong> abduljameel2607@gmail.com</p>
-            <p><strong>Location:</strong> Chennai, India</p>
-            <p>
-                <strong>LinkedIn:</strong>
-                <a href="https://linkedin.com/in/abdul-jameel-a-m" target="_blank" rel="noopener noreferrer">
-                    linkedin.com/in/abdul-jameel-a-m
-                </a>
-            </p>
-            <p>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/jameel2607" target="_blank" rel="noopener noreferrer">
-                    github.com/jameel2607
-                </a>
-            </p>
+        <div class="contact-grid">
+            <div class="contact-left">
+                <div class="contact-info">
+                    <p><span class="contact-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span><strong>Email:</strong> <a href="mailto:abduljameel2607@gmail.com">abduljameel2607@gmail.com</a></p>
+                    <p><span class="contact-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><strong>Location:</strong> Chennai, India</p>
+                    <p><span class="contact-icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/abdul-jameel-a-m" target="_blank" rel="noopener noreferrer">linkedin.com/in/abdul-jameel-a-m</a></p>
+                    <p><span class="contact-icon"><i class="fa fa-github" aria-hidden="true"></i></span><strong>GitHub:</strong> <a href="https://github.com/jameel2607" target="_blank" rel="noopener noreferrer">github.com/jameel2607</a></p>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <h3>Let's Connect</h3>
+                <div class="form-status" aria-live="polite"></div>
+                <form class="contact-form" aria-label="Contact form" novalidate>
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your Name" required>
+
+                    <label for="email">Your Email</label>
+                    <input id="email" name="email" type="email" placeholder="Your Email" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
-
-        <h3>Let's Connect</h3>
-
-        <form class="contact-form">
-            <label for="name">Your Name</label>
-            <input id="name" type="text" placeholder="Your Name" required>
-            <label for="email">Your Email</label>
-            <input id="email" type="email" placeholder="Your Email" required>
-            <label for="message">Your Message</label>
-            <textarea id="message" placeholder="Your Message" rows="4"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
 
     </section>
 
         <!-- FOOTER -->
-    <footer class="footer">
-        <p>&copy; 2026 Abdul Jameel A M</p>
-    </footer>
+        <footer class="footer">
+            <div class="footer-grid">
+                <div class="footer-left">
+                    <p>&copy; 2026 Abdul Jameel A M</p>
+                    <p class="footer-note">Software Engineer · Chennai</p>
+                </div>
 
+                <div class="footer-center">
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
 
+                <div class="footer-right">
+                    <a href="mailto:abduljameel2607@gmail.com" aria-label="Email" class="social" title="Email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
 
+                    <a href="https://linkedin.com/in/abdul-jameel-a-m" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social" title="LinkedIn">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
 
+                    <a href="https://github.com/jameel2607" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social" title="GitHub">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
 
-
+    <script src="script.js"></script>
 </body>
 </html>
